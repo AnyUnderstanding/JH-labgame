@@ -6,18 +6,26 @@ class Citzen {
         this.h = h;
         this.speed = speed;
         this.direction = 0;
+        this.dialog = false;
+        this.convinced = false;
     }
 
     show() {
-        fill(234,12,45);
+        if(!this.convinced){
+            fill(234,12,45);
+        }else {
+            fill(102,255,102);
+        }
         strokeWeight(0);
         rect(this.x, this.y, this.w, this.h)
     }
 
     walk() {
+        if (!dialog){
         this.x += this.speed;
         this.y += this.direction;
         this.checkBoundaries();
+        }
     }
 
     checkBoundaries() {

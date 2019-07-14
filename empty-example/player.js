@@ -5,6 +5,7 @@ class Player {
         this.w = w;
         this.h = h;
         this.speed = speed;
+        this.dialog = dialog;
     }
 
     show() {
@@ -13,19 +14,21 @@ class Player {
     }
 
     walk() {
-        if (keyIsDown(UP_ARROW)) {
-            this.y -= this.speed ;
-        } else if (keyIsDown(DOWN_ARROW)) {
-            this.y += this.speed;
-        }
-        if (keyIsDown(LEFT_ARROW)) {
-            this.x -= this.speed;
-        } else if (keyIsDown(RIGHT_ARROW)) {
-            this.x += this.speed;
+        if (!dialog) {
+            if (keyIsDown(UP_ARROW)) {
+                this.y -= this.speed;
+            } else if (keyIsDown(DOWN_ARROW)) {
+                this.y += this.speed;
+            }
+            if (keyIsDown(LEFT_ARROW)) {
+                this.x -= this.speed;
+            } else if (keyIsDown(RIGHT_ARROW)) {
+                this.x += this.speed;
 
-        }
+            }
 
-        this.checkBoundaries();
+            this.checkBoundaries();
+        }
     }
 
     checkBoundaries() {
