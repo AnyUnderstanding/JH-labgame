@@ -5,7 +5,6 @@ class Player {
         this.w = w;
         this.h = h;
         this.speed = speed;
-        this.key = 0;
     }
 
     show() {
@@ -14,43 +13,26 @@ class Player {
     }
 
     walk() {
+        if (keyIsDown(UP_ARROW)) {
+            this.y -= this.speed ;
+        } else if (keyIsDown(DOWN_ARROW)) {
+            this.y += this.speed;
+        }
+        if (keyIsDown(LEFT_ARROW)) {
+            this.x -= this.speed;
+        } else if (keyIsDown(RIGHT_ARROW)) {
+            this.x += this.speed;
 
-        window.onkeyup = function (e) {
-            this.key = e.keyCode ? e.keyCode : e.which;
-        };
-
-        switch (this.key) {
-
-            case 38||87: //up
-                this.y -= this.speed;
-                console.log(this.x+"        "+this.speed +"      "+key);
-
-                break;
-            case 40||83: //down
-                this.y += this.speed;
-                break;
-            case 39||68: //right
-                this.x += this.speed;
-                break;
-            case 37||65: //left
-                this.x -= this.speed;
-                break;
-            default:
-                console.log("as");
-                break;
         }
 
-
-        // this.checkBoundaries();
+        this.checkBoundaries();
     }
 
     checkBoundaries() {
         if (this.x + this.w > width) {
-            this.speed *= -1;
             this.x = width - this.h;
         }
         if (this.x < 0) {
-            this.speed *= -1;
             this.x = 0;
         }
 
