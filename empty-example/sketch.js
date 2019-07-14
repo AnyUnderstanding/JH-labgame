@@ -11,9 +11,11 @@ function setup() {
 function draw() {
 
     background(220);
+    collison();
     player.show();
     player.walk();
     for (let i = 0; i < citzen.length; i++) {
+        collison();
         citzen[i].show();
         citzen[i].walk()
     }
@@ -21,8 +23,20 @@ function draw() {
 
 function createCitzen() {
     for (let i = 0; i < 10; i++) {
-        citzen.push(new Citzen(0, 0, 20, 20,Math.random()*2));
+        citzen.push(new Citzen(0, 0, 20, 20, Math.random() * 2));
         citzen[i].changeDirection();
     }
 
+}
+
+function collison() {
+    for (let i = 0; i < citzen.length; i++) {
+        console.log("mess")
+        if (player.x < citzen[i].x + citzen[i].w &&
+            player.x + player.w > citzen[i].x &&
+            player.y < citzen[i].y + citzen[i].h &&
+            player.y + player.h > citzen[i].y) {
+            console.log("collison")
+        }
+    }
 }
