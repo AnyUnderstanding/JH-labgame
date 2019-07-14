@@ -31,7 +31,6 @@ function createCitzen() {
 
 function collison() {
     for (let i = 0; i < citzen.length; i++) {
-        console.log("mess")
         if (player.x < citzen[i].x + citzen[i].w &&
             player.x + player.w > citzen[i].x &&
             player.y < citzen[i].y + citzen[i].h &&
