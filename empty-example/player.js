@@ -5,6 +5,7 @@ class Player {
         this.w = w;
         this.h = h;
         this.speed = speed;
+        this.key = 0;
     }
 
     show() {
@@ -13,27 +14,31 @@ class Player {
     }
 
     walk() {
-        console.log("walk");
+
         window.onkeyup = function (e) {
-            var key = e.keyCode ? e.keyCode : e.which;
+            this.key = e.keyCode ? e.keyCode : e.which;
         };
-        switch (key) {
+
+        switch (this.key) {
+
             case 38||87: //up
                 this.y -= this.speed;
+                console.log(this.x+"        "+this.speed +"      "+key);
+
                 break;
             case 40||83: //down
                 this.y += this.speed;
                 break;
             case 39||68: //right
                 this.x += this.speed;
-                console.log(this.x+"        "+this.speed);
                 break;
             case 37||65: //left
                 this.x -= this.speed;
                 break;
             default:
+                console.log("as");
+                break;
         }
-        console.log(this.x+"        "+this.speed);
 
 
         // this.checkBoundaries();
