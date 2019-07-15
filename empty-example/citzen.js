@@ -21,11 +21,11 @@ class Citzen {
     }
 
     walk() {
-        if (!dialog){
+     //   if (!this.dialog){
         this.x += this.speed;
         this.y += this.direction;
         this.checkBoundaries();
-        }
+      //  }
     }
 
     checkBoundaries() {
