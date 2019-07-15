@@ -6,11 +6,26 @@ class Player {
         this.h = h;
         this.speed = speed;
         this.dialog = false;
+        this.direction = 0;
+        this.directionSet = 1;
     }
 
+
+
     show() {
-        fill(133);
-        image(playerSprite, this.x, this.y,this.w,this.h);
+        if (this.direction === 1 && this.directionSet === 0) {
+            this.directionSet = 1;
+        }else if (this.direction === 0 && this.directionSet === 1) {
+            this.directionSet = 0;
+        }
+        switch(this.direction){
+            case 0:
+                image(playerSpriteLeft, this.x, this.y, this.w, this.h);
+                break;
+            case 1:
+                image(playerSpriteRight, this.x, this.y, this.w, this.h);
+                break;
+        }
     }
 
     walk() {
@@ -21,8 +36,10 @@ class Player {
                 this.y += this.speed;
             }
             if (keyIsDown(LEFT_ARROW)) {
+                this.direction = 0;
                 this.x -= this.speed;
             } else if (keyIsDown(RIGHT_ARROW)) {
+                this.direction = 1;
                 this.x += this.speed;
 
             }

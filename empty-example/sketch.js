@@ -3,9 +3,13 @@ let duration = 20;
 let size;
 let szene;
 
-let playerSprite;
+let playerSpriteRight;
+let playerSpriteLeft;
+let unconvincedNPC;
 function preload() {
-    playerSprite = loadImage('assets/img/characters/player.png');
+    playerSpriteRight = loadImage('assets/img/characters/playerRight.png');
+    playerSpriteLeft = loadImage('assets/img/characters/playerLeft.png');
+    unconvincedNPC = loadImage('assets/img/characters/unconvinced.png');
 }
 
 function setup() {

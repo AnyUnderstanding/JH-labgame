@@ -12,12 +12,10 @@ class Citzen {
 
     show() {
         if(!this.convinced){
-            fill(234,12,45);
+            image(unconvincedNPC, this.x, this.y, this.w, this.h);
         }else {
-            fill(102,255,102);
+            image(playerSpriteRight, this.x, this.y, this.w, this.h);
         }
-        strokeWeight(0);
-        rect(this.x, this.y, this.w, this.h)
     }
 
     walk() {
