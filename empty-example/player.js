@@ -10,7 +10,7 @@ class Player {
 
     show() {
         fill(133);
-        rect(this.x, this.y, this.w, this.h)
+        image(playerSprite, this.x, this.y);
     }
 
     walk() {

@@ -3,6 +3,11 @@ let duration = 20;
 let size;
 let szene;
 
+let playerSprite;
+function preload() {
+    playerSprite = loadImage('assets/img/characters/player.png');
+}
+
 function setup() {
     createCanvas(Math.max(document.documentElement.clientWidth, window.innerWidth || 0), Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
     szene = new SceneStart();
