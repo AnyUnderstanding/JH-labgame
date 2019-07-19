@@ -20,7 +20,7 @@ function preload() {
 function setup() {
     createCanvas(Math.max(document.documentElement.clientWidth, window.innerWidth || 0), Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
     size = (width + height) / 2 * 0.03;
-    player = new Player(90, 90, size, size, 2);
+    player = new Player(800, 90, size, size, 6);
     startScene = new SceneStart(player, size);
     scene2 = new Scene2(player, size);
     timer = new Timer(duration, 0, 0, 20, width);
