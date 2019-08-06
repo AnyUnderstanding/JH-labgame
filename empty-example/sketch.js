@@ -5,16 +5,22 @@ let startScene;
 let scene2;
 let scene = 0;
 let player;
+let pauseGame = true;
+let dialog;
 
 
 let playerSpriteRight;
 let playerSpriteLeft;
 let unconvincedNPC;
+let jsonFile;
 
 function preload() {
     playerSpriteRight = loadImage('assets/img/characters/playerRight.png');
     playerSpriteLeft = loadImage('assets/img/characters/playerLeft.png');
     unconvincedNPC = loadImage('assets/img/characters/unconvinced.png');
+    let url = "files/quiz.json";
+    jsonFile = loadJSON(url);
+
 }
 
 function setup() {
@@ -24,34 +30,36 @@ function setup() {
     startScene = new SceneStart(player, size);
     scene2 = new Scene2(player, size);
     timer = new Timer(duration, 0, 0, 20, width);
+    dialog = new Dialog();
 
     scene2.setup();
 
     startScene.setup();
+    console.log(jsonFile)
 }
 
 function draw() {
-    console.log(scene);
-
-    switch (scene) {
-        case 0:
-            startScene.setBackground();
-            drawTimer();
-            startScene.draw();
-            break;
-        case 1:
-            scene2.setBackground();
-            drawTimer();
-            scene2.draw();
-            break;
+    if (!pauseGame) {
+        switch (scene) {
+            case 0:
+                startScene.setBackground();
+                drawTimer();
+                startScene.draw();
+                break;
+            case 1:
+                scene2.setBackground();
+                drawTimer();
+                scene2.draw();
+                break;
+        }
+        timer.show();
+    } else {
+        let list = ["addsf","sdf","gfdg"]
+        dialog.showDialog(0.10,null,null,list);
     }
 
-
-
-    timer.show();
-
-
 }
+
 
 function drawTimer() {
     if (timer.update()) {

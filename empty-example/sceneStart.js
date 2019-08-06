@@ -12,6 +12,8 @@ class SceneStart {
         this.createCitzen();
         this.teleporter = new SceneChanger(300, 300, 20, 20, this.player, 1);
         this.bubble = new speechBubble("Hello I am an alien!");
+        let quiz = new Quiz();
+        quiz.logRandomQuestion();
     }
 
     setBackground() {
@@ -32,7 +34,6 @@ class SceneStart {
         this.player.show();
         this.player.walk();
         if (this.teleporter.collision()){
-            console.log("llll");
             scene = 1;}
         this.bubble.show();
         this.bubble.getPlayPos(this.player.x, this.player.y);

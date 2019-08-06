@@ -11,25 +11,24 @@ class Citzen {
     }
 
     show() {
-        if(!this.convinced){
+        if (!this.convinced) {
             image(unconvincedNPC, this.x, this.y, this.w, this.h);
-        }else {
+        } else {
             image(playerSpriteRight, this.x, this.y, this.w, this.h);
         }
     }
 
     walk() {
-     //   if (!this.dialog){
         this.x += this.speed;
         this.y += this.direction;
         this.checkBoundaries();
-      //  }
+        this.checkForDialog();
     }
 
     checkBoundaries() {
-        if (this.x+this.w > width) {
+        if (this.x + this.w > width) {
             this.speed *= -1;
-            this.x = width-this.h;
+            this.x = width - this.h;
             this.changeDirection();
         }
         if (this.x < 0) {
@@ -38,8 +37,8 @@ class Citzen {
             this.changeDirection();
         }
 
-        if (this.y+this.h > height) {
-            this.y = height-this.h;
+        if (this.y + this.h > height) {
+            this.y = height - this.h;
             this.changeDirection();
         }
         if (this.y < 0) {
@@ -47,7 +46,19 @@ class Citzen {
             this.changeDirection();
         }
     }
-    changeDirection(){
-        this.direction = Math.random()*4-2;
+
+    changeDirection() {
+        this.direction = Math.random() * 4 - 2;
+    }
+
+    checkForDialog() {
+        if (this.dialog) {
+            this.onDialog();
+        }
+    }
+
+    onDialog() {
+        this.speed = 0;
+        this.direction = 0;
     }
 }

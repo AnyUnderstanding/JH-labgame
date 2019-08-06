@@ -2,77 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e891c6-4127-47af-92cb-41565c0af38b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/empty-example/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/empty-example/files/quiz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/empty-example/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JH-labgame/empty-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JH-labgame/empty-example/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JH-labgame/empty-example/scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/JH-labgame/empty-example/scene2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JH-labgame/empty-example/sceneChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/JH-labgame/empty-example/sceneChanger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JH-labgame/empty-example/sceneStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/JH-labgame/empty-example/sceneStart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JH-labgame/empty-example/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JH-labgame/empty-example/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/assets/img/characters/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/citzen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/minigames/dino-game/dino-game.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/minigames/dino-game/dino.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/p5.dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/p5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/p5.sound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/scene2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sceneChanger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sceneStart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sketch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/timer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/citzen.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/citzen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/sceneChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneChanger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/sceneStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneStart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sketch.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sketch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sceneStart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/scene2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sceneChanger.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,92 +26,16 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>width</find>
-      <find>durat</find>
-      <find>size</find>
-      <find>.citzen[i]</find>
-      <find>szene</find>
-      <find>scenes</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>w</replace>
-      <replace>this.size</replace>
-      <replace>scene</replace>
-      <replace>startScene</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JH-labgame" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/empty-example/style.css" />
-        <option value="$PROJECT_DIR$/empty-example/timer.js" />
-        <option value="$PROJECT_DIR$/empty-example/scene2.js" />
-        <option value="$PROJECT_DIR$/empty-example/citzen.js" />
-        <option value="$PROJECT_DIR$/empty-example/minigames/dino-game/sketch.js" />
-        <option value="$PROJECT_DIR$/empty-example/minigames/dino-game/dino-game.js" />
-        <option value="$PROJECT_DIR$/empty-example/player.js" />
-        <option value="$PROJECT_DIR$/empty-example/minigames/dino-game/dino.js" />
-        <option value="$PROJECT_DIR$/empty-example/sketch.js" />
-        <option value="$PROJECT_DIR$/empty-example/sceneStart.js" />
-        <option value="$PROJECT_DIR$/empty-example/index.html" />
-        <option value="$PROJECT_DIR$/empty-example/sceneChanger.js" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/szeneChanger.js" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/index.html" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/sketch.js" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/sceneChanger.js" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/sceneStart.js" />
-        <option value="$PROJECT_DIR$/JH-labgame/empty-example/scene2.js" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="58" />
     <option name="width" value="1920" />
     <option name="height" value="996" />
   </component>
+  <component name="ProjectId" id="1P3Zn3jLlJTKtwBcKTEDg1E84FD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="p5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p5" type="462c0819:PsiDirectoryNode" />
-              <item name="JH-labgame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p5" type="462c0819:PsiDirectoryNode" />
-              <item name="JH-labgame" type="462c0819:PsiDirectoryNode" />
-              <item name="empty-example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p5" type="462c0819:PsiDirectoryNode" />
-              <item name="JH-labgame" type="462c0819:PsiDirectoryNode" />
-              <item name="empty-example" type="462c0819:PsiDirectoryNode" />
-              <item name="minigames" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -191,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
     <configuration name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" nameIsGenerated="true" port="9229">
       <method v="2" />
     </configuration>
@@ -199,6 +67,9 @@
       <method v="2" />
     </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/p5/JH-labgame/empty-example/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JH-labgame/empty-example/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/p5/empty-example/index.html" useBuiltInWebServerPort="true">
@@ -223,9 +94,11 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="Spy-js.Unnamed" />
+      <item itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
@@ -247,128 +120,22 @@
       <workItem from="1563177265674" duration="14112000" />
       <workItem from="1563283711130" duration="5960000" />
       <workItem from="1563548161791" duration="1694000" />
+      <workItem from="1565104911784" duration="8654000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41879000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="995" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2530311" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28393665" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Floobits" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22584401" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2530311" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28393665" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Floobits" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22584401" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/p5.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/empty-example/p5.sound.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/timer.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/style.css" />
-    <entry file="file://$PROJECT_DIR$/empty-example/scene2.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/minigames/dino-game/sketch.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/assets/img/characters/player.png" />
-    <entry file="file://$PROJECT_DIR$/empty-example/minigames/dino-game/dino-game.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/p5.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/minigames/dino-game/dino.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/player.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/citzen.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/p5.dom.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/sketch.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/index.html" />
-    <entry file="file://$PROJECT_DIR$/empty-example/sceneChanger.js" />
-    <entry file="file://$PROJECT_DIR$/empty-example/sceneStart.js" />
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/szeneChanger.js" />
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sceneStart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/sceneChanger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JH-labgame/empty-example/scene2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

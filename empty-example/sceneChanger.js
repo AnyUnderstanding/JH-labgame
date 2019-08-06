@@ -16,10 +16,8 @@ class SceneChanger {
             this.player.x + this.player.w > this.x &&
             this.player.y < this.y + this.h &&
             this.player.y + this.player.h > this.y){
-            console.log("eee");
             return true;
         }
-        console.log("false")
             return false;
 
     }
