@@ -5,7 +5,7 @@ let startScene;
 let scene2;
 let scene = 0;
 let player;
-let pauseGame = true;
+let pauseGame = false;
 let dialog;
 
 
