@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e891c6-4127-47af-92cb-41565c0af38b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/empty-example/dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/files/quiz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/citzen.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/citzen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sceneChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneChanger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sceneStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneStart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/empty-example/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sketch.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +21,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="58" />
-    <option name="width" value="1920" />
-    <option name="height" value="996" />
   </component>
   <component name="ProjectId" id="1P3Zn3jLlJTKtwBcKTEDg1E84FD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -93,8 +81,8 @@
       <item itemvalue="Attach to Node.js/Chrome.Unnamed" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="Spy-js.Unnamed" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
+      <item itemvalue="Spy-js.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -120,8 +108,18 @@
       <workItem from="1563177265674" duration="14112000" />
       <workItem from="1563283711130" duration="5960000" />
       <workItem from="1563548161791" duration="1694000" />
-      <workItem from="1565104911784" duration="8654000" />
+      <workItem from="1565104911784" duration="9070000" />
+      <workItem from="1565258462112" duration="1577000" />
+      <workItem from="1565617084697" duration="594000" />
     </task>
+    <task id="LOCAL-00001" summary="added dialog and Jsonparser">
+      <created>1565113836173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565113836173</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,10 +130,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added dialog and Jsonparser" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dialog and Jsonparser" />
   </component>
 </project>

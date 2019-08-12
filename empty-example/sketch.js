@@ -39,7 +39,7 @@ function setup() {
 }
 
 function draw() {
-    if (!pauseGame) {
+    if (pauseGame) {
         switch (scene) {
             case 0:
                 startScene.setBackground();
@@ -54,7 +54,7 @@ function draw() {
         }
         timer.show();
     } else {
-        let list = ["addsf","sdf","gfdg"]
+        let list = ["addsf","sdf","gfdg"];
         dialog.showDialog(0.10,null,null,list);
     }
 
