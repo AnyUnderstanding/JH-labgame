@@ -2,6 +2,7 @@ class SceneStart {
 
     constructor(player, size) {
         this.size = size;
+        this.tiles = [];
         this.citzen = [];
         this.obstacle = [];
         this.player = player;
@@ -10,12 +11,14 @@ class SceneStart {
     }
 
     setup() {
+        this.drawSceen();
         this.createCitzen();
         this.createObstacles();
         this.teleporter = new SceneChanger(300, 300, 20, 20, this.player, 1);
         this.bubble = new speechBubble("Hello I am an alien!");
         let quiz = new Quiz();
         quiz.logRandomQuestion();
+
     }
 
     setBackground() {
@@ -23,7 +26,10 @@ class SceneStart {
     }
 
     draw() {
+        for (let i = 0; i < this.tiles.length; i++) {
+            this.tiles[i].show();
 
+        }
         this.teleporter.show();
 
         for (let i = 0; i < this.citzen.length; i++) {
@@ -35,6 +41,7 @@ class SceneStart {
             this.obstacle[i].show();
 
         }
+
         if (!this.dialog) {
             this.collison();
         }
@@ -42,10 +49,25 @@ class SceneStart {
         this.player.walk();
         this.player.checkForObstacles(this.obstacle)
 
-        if (this.teleporter.collision()){
-            scene = 1;}
+        if (this.teleporter.collision()) {
+            scene = 1;
+        }
         this.bubble.show();
         this.bubble.getPlayPos(this.player.x, this.player.y);
+    }
+
+    drawSceen() {
+        let tileSize = 5;
+        let sidewalkStart = 0;
+        for (let i = 0; i < 10; i++) {
+            this.tiles[i] = new Tile(i * tileSize, sidewalkStart, tileSize, tileSize*1.2, introTiles[0]);
+        }
+
+        let streetStart = sidewalkStart+(tileSize*1.2);
+        for (let i = 0; i < 10; i++) {
+            this.tiles[i+10] = new Tile(i * tileSize, streetStart, tileSize, tileSize*2, introTiles[1]);
+
+        }
     }
 
     collison() {
@@ -69,8 +91,9 @@ class SceneStart {
         }
 
     }
+
     createObstacles() {
-            this.obstacle.push(new Obstacle(50, 50, this.size, this.size, questMasterImg));
+        this.obstacle.push(new Obstacle(50, 50, this.size, this.size, questMasterImg));
 
     }
 

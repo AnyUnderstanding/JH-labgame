@@ -3,12 +3,13 @@ let duration = 20;
 let size;
 let startScene;
 let scene2;
-let scene = -1;
+let scene = 0;
 let player;
 let pauseGame = true;
 let dialog;
 let introScene;
 
+let introTiles = [];
 
 let playerSpriteRight;
 let playerSpriteLeft;
@@ -22,6 +23,8 @@ function preload() {
     playerSpriteLeft = loadImage('assets/img/characters/playerLeft.png');
     unconvincedNPC = loadImage('assets/img/characters/unconvinced.png');
     questMasterImg = loadImage('assets/img/characters/questmaster.png');
+    introTiles.push(loadImage('assets/img/tiles/sidewalk.jpeg'));
+    introTiles.push(loadImage('assets/img/tiles/street.jpeg'));
     let url = "files/quiz.json";
     jsonFile = loadJSON(url);
 

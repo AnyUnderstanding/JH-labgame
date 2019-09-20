@@ -8,6 +8,7 @@ class Tile {
     }
 
     show() {
-        image(this.image, this.x, this.y, this.w, this.h);
+        console.log(size);
+        image(this.image, this.x*size, this.y*size, this.w*size, this.h*size);
     }
 }
