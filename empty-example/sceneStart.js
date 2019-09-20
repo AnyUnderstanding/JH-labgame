@@ -3,6 +3,7 @@ class SceneStart {
     constructor(player, size) {
         this.size = size;
         this.citzen = [];
+        this.obstacle = [];
         this.player = player;
         this.dialog = false;
         this.teleporter = 0;
@@ -10,6 +11,7 @@ class SceneStart {
 
     setup() {
         this.createCitzen();
+        this.createObstacles();
         this.teleporter = new SceneChanger(300, 300, 20, 20, this.player, 1);
         this.bubble = new speechBubble("Hello I am an alien!");
         let quiz = new Quiz();
@@ -26,13 +28,20 @@ class SceneStart {
 
         for (let i = 0; i < this.citzen.length; i++) {
             this.citzen[i].show();
-            this.citzen[i].walk();
+            this.citzen[i].move();
+            this.citzen[i].checkForObstacles(this.obstacle)
+        }
+        for (let i = 0; i < this.obstacle.length; i++) {
+            this.obstacle[i].show();
+
         }
         if (!this.dialog) {
             this.collison();
         }
         this.player.show();
         this.player.walk();
+        this.player.checkForObstacles(this.obstacle)
+
         if (this.teleporter.collision()){
             scene = 1;}
         this.bubble.show();
@@ -46,15 +55,10 @@ class SceneStart {
                 this.player.x + this.player.w > this.citzen[i].x &&
                 this.player.y < this.citzen[i].y + this.citzen[i].h &&
                 this.player.y + this.player.h > this.citzen[i].y) {
-                // this.dialog = true;
                 this.player.dialog = true;
                 this.citzen[i].dialog = true;
                 this.citzen[i].convinced = true;
-                /* setTimeout(function () {
-                     this.pauseGameOnCollision(i)
-                 }, 1000);*/
             }
-
         }
     }
 
@@ -63,6 +67,10 @@ class SceneStart {
             this.citzen.push(new Citzen(0, 0, this.size, this.size, Math.random() * 5));
             this.citzen[i].changeDirection();
         }
+
+    }
+    createObstacles() {
+            this.obstacle.push(new Obstacle(50, 50, this.size, this.size, questMasterImg));
 
     }
 

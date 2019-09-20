@@ -3,21 +3,25 @@ let duration = 20;
 let size;
 let startScene;
 let scene2;
-let scene = 0;
+let scene = -1;
 let player;
-let pauseGame = false;
+let pauseGame = true;
 let dialog;
+let introScene;
 
 
 let playerSpriteRight;
 let playerSpriteLeft;
 let unconvincedNPC;
+let questMasterImg;
+
 let jsonFile;
 
 function preload() {
     playerSpriteRight = loadImage('assets/img/characters/playerRight.png');
     playerSpriteLeft = loadImage('assets/img/characters/playerLeft.png');
     unconvincedNPC = loadImage('assets/img/characters/unconvinced.png');
+    questMasterImg = loadImage('assets/img/characters/questmaster.png');
     let url = "files/quiz.json";
     jsonFile = loadJSON(url);
 
@@ -29,13 +33,13 @@ function setup() {
     player = new Player(800, 90, size, size, 6);
     startScene = new SceneStart(player, size);
     scene2 = new Scene2(player, size);
+    introScene = new IntroScene(player, size);
     timer = new Timer(duration, 0, 0, 20, width);
     dialog = new Dialog();
-
     scene2.setup();
-
     startScene.setup();
-    console.log(jsonFile)
+    introScene.setup();
+    console.log(jsonFile);
 }
 
 function draw() {
@@ -51,11 +55,16 @@ function draw() {
                 drawTimer();
                 scene2.draw();
                 break;
+            case -1:
+                introScene.setBackground();
+                introScene.draw();
+                break;
         }
-        timer.show();
+        if (scene !== -1) timer.show();
+
     } else {
-        let list = ["addsf","sdf","gfdg"];
-        dialog.showDialog(0.10,null,null,list);
+        let list = ["addsf", "sdf", "gfdg"];
+        dialog.showDialog(0.10, null, null, list);
     }
 
 }
@@ -86,4 +95,5 @@ function resize() {
         startScene.citzen[i].w = size;
         startScene.citzen[i].h = size;
     }
+
 }

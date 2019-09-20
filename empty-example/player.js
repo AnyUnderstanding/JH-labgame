@@ -11,14 +11,13 @@ class Player {
     }
 
 
-
     show() {
         if (this.direction === 1 && this.directionSet === 0) {
             this.directionSet = 1;
-        }else if (this.direction === 0 && this.directionSet === 1) {
+        } else if (this.direction === 0 && this.directionSet === 1) {
             this.directionSet = 0;
         }
-        switch(this.direction){
+        switch (this.direction) {
             case 0:
                 image(playerSpriteLeft, this.x, this.y, this.w, this.h);
                 break;
@@ -29,22 +28,22 @@ class Player {
     }
 
     walk() {
-       // if (!this.dialog) {
-            if (keyIsDown(UP_ARROW)) {
-                this.y -= this.speed;
-            } else if (keyIsDown(DOWN_ARROW)) {
-                this.y += this.speed;
-            }
-            if (keyIsDown(LEFT_ARROW)) {
-                this.direction = 0;
-                this.x -= this.speed;
-            } else if (keyIsDown(RIGHT_ARROW)) {
-                this.direction = 1;
-                this.x += this.speed;
+        // if (!this.dialog) {
+        if (keyIsDown(UP_ARROW)) {
+            this.y -= this.speed;
+        } else if (keyIsDown(DOWN_ARROW)) {
+            this.y += this.speed;
+        }
+        if (keyIsDown(LEFT_ARROW)) {
+            this.direction = 0;
+            this.x -= this.speed;
+        } else if (keyIsDown(RIGHT_ARROW)) {
+            this.direction = 1;
+            this.x += this.speed;
 
-            }
+        }
 
-            this.checkBoundaries();
+        this.checkBoundaries();
         //}
     }
 
@@ -61,6 +60,18 @@ class Player {
         }
         if (this.y < 0) {
             this.y = 0;
+        }
+    }
+
+    checkForObstacles(obstacles) {
+        for (let i = 0; i < obstacles.length; i++) {
+            if (obstacles[i].x < this.x + this.w &&
+                obstacles[i].x + obstacles[i].w > this.x &&
+                obstacles[i].y < this.y + this.h &&
+                obstacles[i].y + obstacles[i].h > this.y) {
+                this.y -= 1;
+                this.x -= 1;
+            }
         }
     }
 

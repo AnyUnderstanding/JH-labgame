@@ -23,6 +23,5 @@ class Scene2 {
 
     setup() {
         this.teleporter = new SceneChanger(400, 400, 20, 20, this.player, 0);
-
     }
 }

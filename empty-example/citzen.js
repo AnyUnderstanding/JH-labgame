@@ -8,6 +8,8 @@ class Citzen {
         this.direction = 0;
         this.dialog = false;
         this.convinced = false;
+        this.i = 0;
+        this.random = 0;
     }
 
     show() {
@@ -18,11 +20,28 @@ class Citzen {
         }
     }
 
+    move() {
+        if (this.i === this.random) {
+            this.speed = Math.floor(Math.random() * 3) - 3;
+            this.direction = Math.floor(Math.random() * 2) - 2;
+            this.i = 0;
+            this.getRandom(500, 0);
+            console.log("turn")
+        }
+        this.walk();
+        this.i++;
+
+    }
+
     walk() {
         this.x += this.speed;
         this.y += this.direction;
         this.checkBoundaries();
         this.checkForDialog();
+    }
+
+    getRandom(highBound, lowBound) {
+        this.random = Math.floor(Math.random() * highBound) + lowBound;
     }
 
     checkBoundaries() {
@@ -44,6 +63,17 @@ class Citzen {
         if (this.y < 0) {
             this.y = 0;
             this.changeDirection();
+        }
+    }
+
+    checkForObstacles(obstacles) {
+        for (let i = 0; i < obstacles.length; i++) {
+            if (obstacles[i].x < this.x + this.w &&
+                obstacles[i].x + obstacles[i].w > this.x &&
+                obstacles[i].y < this.y + this.h &&
+                obstacles[i].y + obstacles[i].h > this.y) {
+                this.changeDirection();
+            }
         }
     }
 
