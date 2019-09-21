@@ -1,20 +1,70 @@
 {
   "questions": [
     {
-      "question": "this is a question",
+      "question": "Welches Länd ist Vorreiter im Klimaschutz",
       "answers": [
-        "a",
-        "b",
-        "c"
-      ]
+        "Island",
+        "Deutschland",
+        "Spanien"
+      ],
+      "correct": 0
     },
     {
-      "question": "is this a question",
+      "question": "Welchen anteil haben Erneuerbare Energien am Deutschen Stromnetz (ca.)",
       "answers": [
-        "a",
-        "b",
-        "c"
-      ]
+        "70%",
+        "50%",
+        "30%"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Welcher Anteil im Strommix war in Deutschland am höchsten?",
+      "answers": [
+        "Wasserkraft",
+        "Kohle",
+        "Wind"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Welches dieser Land produziert am meisten CO2 (Pro Einwohner)",
+      "answers": [
+        "Vereinigte Staaten",
+        "Deutschland",
+        "Volksrepublik China"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Welches Land hat einer der besten Fahrrad infrastruckturen?",
+      "answers": [
+        "Schottland",
+        "Deutschland",
+        "Niederlande",
+        "Schweden"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Wie viel Prozent des deutschen Verkehrs sind Radverkehr",
+      "answers": [
+        "30%",
+        "7%",
+        "10%",
+        "18%"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Welchen Anteil hat die Tierhaltung an der CO2-Emission",
+      "answers": [
+        "20%",
+        "7%",
+        "30%",
+        "18%"
+      ],
+      "correct": 0
     }
   ]
 }

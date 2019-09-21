@@ -22,7 +22,7 @@ class Citzen {
 
     move() {
         if (this.i === this.random) {
-            this.speed =7+ Math.floor(Math.random() * 3) - 3;
+            this.speed = 7 + Math.floor(Math.random() * 3) - 3;
             this.direction = Math.floor(Math.random() * 2) - 2;
             this.i = 0;
             this.getRandom(500, 0);

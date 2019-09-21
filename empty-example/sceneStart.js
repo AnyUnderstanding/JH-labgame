@@ -1,5 +1,6 @@
 class SceneStart {
     map;
+    index;
 
     constructor(player, size) {
         this.size = size;
@@ -15,7 +16,7 @@ class SceneStart {
         this.drawScene();
         this.createCitzen();
         this.createObstacles();
-        this.teleporter = new SceneChanger(size*26, size*4.5, size*1.5, size*4, this.player, 1);
+        this.teleporter = new SceneChanger(size * 26, size * 4.5, size * 1.5, size * 4, this.player, 1);
         this.bubble = new speechBubble("Hello I am an alien!");
 
     }
@@ -25,7 +26,9 @@ class SceneStart {
     }
 
     draw() {
+
         this.map.draw();
+        this.checkWin();
 
         for (let i = 0; i < this.citzen.length; i++) {
             this.citzen[i].show();
@@ -57,8 +60,15 @@ class SceneStart {
         this.map.drawTiles(12, 1, 12.5, 2.5, introTiles[0]);
         this.map.drawTiles(0, 4, 8.5, 11, introTiles[2])
         this.map.drawTiles(13, 0, 23, 11, introTiles[2])
-        this.map.drawTiles(13, 1, 13.5, 1.5, introTiles[3],2)
+        this.map.drawTiles(13, 1, 13.5, 1.5, introTiles[3], 2)
 
+    }
+    checkWin(){
+        let j = 0
+        for (let i = 0;i<this.citzen.length;i++){
+            if (this.citzen[i].convinced)j++;
+        }
+        if (j===this.citzen.length)alert("Well done! You saved our World.\n Now its time save yours")
     }
 
     collison() {
@@ -69,10 +79,15 @@ class SceneStart {
                 this.player.y < this.citzen[i].y + this.citzen[i].h &&
                 this.player.y + this.player.h > this.citzen[i].y) {
                 this.player.dialog = true;
+                pauseGame = false;
                 this.citzen[i].dialog = true;
-                this.citzen[i].convinced = true;
+                this.index = i;
             }
         }
+    }
+
+    convince() {
+        this.citzen[this.index].convinced = convince;
     }
 
     createCitzen() {
@@ -85,11 +100,10 @@ class SceneStart {
 
     createObstacles() {
         this.obstacle.push(new Obstacle(50, 50, this.size, this.size, questMasterImg));
-
     }
 
     pauseGameOnCollision(i) {
-        this.dialog = false;
+        this.citzen.this.dialog = false;
         this.player.dialog = false;
         this.citzen[i].dialog = false;
     }

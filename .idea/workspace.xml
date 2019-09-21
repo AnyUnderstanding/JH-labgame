@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="19e891c6-4127-47af-92cb-41565c0af38b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JH-labgame" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/citzen.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/citzen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/files/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/files/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/scene2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/sceneStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneStart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty-example/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sketch.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,10 +86,10 @@
     </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Unnamed" />
-      <item itemvalue="Spy-js.Unnamed" />
+      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
-      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Spy-js.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -126,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565628820055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added dialog and Jsonparser">
+      <created>1569091660776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569091660776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

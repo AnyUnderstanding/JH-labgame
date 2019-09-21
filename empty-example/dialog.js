@@ -2,13 +2,19 @@ class Dialog {
     selected = 0;
     key;
     max;
+    correct;
+
+    constructor(scene) {
+        this.scene = scene;
+    }
 
 
-    showDialog(margin, head, body, list) {
+    showDialog(margin, head, body, list, answerIndex) {
+        this.correct = answerIndex;
         this.max = list.length;
         let offsetX = window.innerWidth * margin;
         let offsetY = window.innerHeight * margin;
-        fill(0, 0, 0);
+        fill(8, 156, 9);
         rect(offsetX / 2, offsetY / 2, window.innerWidth - window.innerWidth * margin, window.innerHeight - window.innerHeight * margin);
         this.drawList(list, head, 30, offsetX, offsetY)
     }
@@ -16,12 +22,10 @@ class Dialog {
     drawList(list, heading, margin, offsetX, offsetY) {
         this.inputHandler(list.length)
         let hspace = margin;
-
-        fill(0, 102, 153);
-        textSize(48);
-        text(heading, offsetX, offsetY + hspace);
+        fill(255, 255, 255);
+        textSize(32);
+        text(heading, offsetX * 2, offsetY + hspace);
         hspace += 2 * margin;
-
         textSize(32);
         for (let i = 0; i < list.length; i++) {
             if (this.selected === i) {
@@ -40,8 +44,19 @@ class Dialog {
             this.selected++;
 
         } else if (keycode === ENTER) {
-            alert("Ob du wirklich richtig stehst, siehst du wenn das Licht angeht")
-            this.selected=0;
+            if (this.selected === this.correct) {
+                alert("right");
+                convince = true;
+                quiz.nextQuestion();
+            } else {
+                alert("wrong");
+                convince = false;
+            }
+            this.scene.convince();
+            console.log(convince)
+            pauseGame = true;
+
+            this.selected = 0;
         }
     }
 

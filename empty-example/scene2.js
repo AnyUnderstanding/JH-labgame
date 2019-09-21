@@ -18,7 +18,6 @@ class Scene2 {
         if (this.teleporter.collision()) {
             scene = 0;
         }
-
     }
 
     setup() {
