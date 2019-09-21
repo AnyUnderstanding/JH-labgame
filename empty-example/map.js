@@ -10,7 +10,6 @@ class Map {
     draw() {
         for (let i = 0; i < this.obstacles.length; i++) this.obstacles[i].show();
         for (let i = 0; i < this.tiles.length; i++) this.tiles[i].show();
-        console.log(this.tiles)
     }
 
     drawVerticaleStreet(x, y, length) {
@@ -53,12 +52,16 @@ class Map {
         }
     }
 
-    drawTiles(x, y, x1, y1, image) {
+    drawTiles(x, y, x1, y1, image, secretValue) {
+        if (secretValue ===null || typeof  secretValue ==='undefined') secretValue = 1;
         x *= this.tileSize;
         y *= this.tileSize;
-        for (let i = x;i<x1;i++){
-            for (let j = y;j<y1;j++){
-                this.tiles.push(new Tile(i, j, this.tileSize, this.tileSize, image));
+        x1 *= this.tileSize;
+        y1 *= this.tileSize;
+
+        for (let i = x; i < x1; i++) {
+            for (let j = y; j < y1; j++) {
+                this.tiles.push(new Tile(i, j, this.tileSize * secretValue, this.tileSize * secretValue, image));
             }
         }
 

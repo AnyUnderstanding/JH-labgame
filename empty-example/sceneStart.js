@@ -1,5 +1,6 @@
 class SceneStart {
     map;
+
     constructor(player, size) {
         this.size = size;
         this.tiles = [];
@@ -14,10 +15,8 @@ class SceneStart {
         this.drawScene();
         this.createCitzen();
         this.createObstacles();
-        this.teleporter = new SceneChanger(300, 300, 20, 20, this.player, 1);
+        this.teleporter = new SceneChanger(size*26, size*4.5, size*1.5, size*4, this.player, 1);
         this.bubble = new speechBubble("Hello I am an alien!");
-        let quiz = new Quiz();
-        quiz.logRandomQuestion();
 
     }
 
@@ -27,7 +26,6 @@ class SceneStart {
 
     draw() {
         this.map.draw();
-        this.teleporter.show();
 
         for (let i = 0; i < this.citzen.length; i++) {
             this.citzen[i].show();
@@ -52,9 +50,14 @@ class SceneStart {
 
     drawScene() {
         this.map = new Map(2);
-        this.map.drawVerticaleStreet(0,0,10);
-        this.map.drawHorizontalStreet(9,3,10);
-        this.map.drawTiles(0,1,20,2,introTiles[0])
+        this.map.drawVerticaleStreet(0, 0, 10);
+        this.map.drawHorizontalStreet(9, 3, 15);
+        this.map.drawTiles(10, 1, 11.5, 2.5, introTiles[1]);
+        this.map.drawTiles(10, 0, 12.5, 0.5, introTiles[0]);
+        this.map.drawTiles(12, 1, 12.5, 2.5, introTiles[0]);
+        this.map.drawTiles(0, 4, 8.5, 11, introTiles[2])
+        this.map.drawTiles(13, 0, 23, 11, introTiles[2])
+        this.map.drawTiles(13, 1, 13.5, 1.5, introTiles[3],2)
 
     }
 

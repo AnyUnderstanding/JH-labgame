@@ -1,8 +1,20 @@
 {
-  "question": "this is a question",
-  "answers": [
-    "a",
-    "b",
-    "c"
+  "questions": [
+    {
+      "question": "this is a question",
+      "answers": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "question": "is this a question",
+      "answers": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
   ]
 }
