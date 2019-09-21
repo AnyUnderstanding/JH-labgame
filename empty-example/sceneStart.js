@@ -1,5 +1,5 @@
 class SceneStart {
-
+    map;
     constructor(player, size) {
         this.size = size;
         this.tiles = [];
@@ -11,7 +11,7 @@ class SceneStart {
     }
 
     setup() {
-        this.drawSceen();
+        this.drawScene();
         this.createCitzen();
         this.createObstacles();
         this.teleporter = new SceneChanger(300, 300, 20, 20, this.player, 1);
@@ -26,28 +26,22 @@ class SceneStart {
     }
 
     draw() {
-        for (let i = 0; i < this.tiles.length; i++) {
-            this.tiles[i].show();
-
-        }
+        this.map.draw();
         this.teleporter.show();
 
         for (let i = 0; i < this.citzen.length; i++) {
             this.citzen[i].show();
             this.citzen[i].move();
-            this.citzen[i].checkForObstacles(this.obstacle)
+            this.citzen[i].checkForObstacles(this.map.obstacles)
         }
-        for (let i = 0; i < this.obstacle.length; i++) {
-            this.obstacle[i].show();
 
-        }
 
         if (!this.dialog) {
             this.collison();
         }
         this.player.show();
         this.player.walk();
-        this.player.checkForObstacles(this.obstacle)
+        this.player.checkForObstacles(this.map.obstacles);
 
         if (this.teleporter.collision()) {
             scene = 1;
@@ -56,18 +50,12 @@ class SceneStart {
         this.bubble.getPlayPos(this.player.x, this.player.y);
     }
 
-    drawSceen() {
-        let tileSize = 5;
-        let sidewalkStart = 0;
-        for (let i = 0; i < 10; i++) {
-            this.tiles[i] = new Tile(i * tileSize, sidewalkStart, tileSize, tileSize*1.2, introTiles[0]);
-        }
+    drawScene() {
+        this.map = new Map(2);
+        this.map.drawVerticaleStreet(0,0,10);
+        this.map.drawHorizontalStreet(9,3,10);
+        this.map.drawTiles(0,1,20,2,introTiles[0])
 
-        let streetStart = sidewalkStart+(tileSize*1.2);
-        for (let i = 0; i < 10; i++) {
-            this.tiles[i+10] = new Tile(i * tileSize, streetStart, tileSize, tileSize*2, introTiles[1]);
-
-        }
     }
 
     collison() {
