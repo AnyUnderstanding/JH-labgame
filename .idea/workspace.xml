@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e891c6-4127-47af-92cb-41565c0af38b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/empty-example/assets/img/characters/questmaster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/introScene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/obstacle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/questMaster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empty-example/tile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/citzen.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/citzen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/scene2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sceneStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sceneStart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty-example/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/empty-example/sketch.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,30 +19,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Christopher &lt;christopher.alan.w@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1PKkq2YKdXcDQsth7OSA7LPNP6b" />
+  <component name="ProjectId" id="1P3Zn3jLlJTKtwBcKTEDg1E84FD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/empty-example/assets/img/characters" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/empty-example/assets/img/characters" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,13 +56,10 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/p5/JH-labgame/empty-example/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63344/JH-labgame/empty-example/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JH-labgame/empty-example/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/p5/empty-example/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="citzen.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="citzen.js" working-dir="$PROJECT_DIR$/empty-example">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt">
@@ -105,13 +81,11 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
-      <item itemvalue="Node.js.citzen.js" />
       <item itemvalue="Spy-js.Unnamed" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="Node.js.citzen.js" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
@@ -133,21 +107,26 @@
       <workItem from="1563177265674" duration="14112000" />
       <workItem from="1563283711130" duration="5960000" />
       <workItem from="1563548161791" duration="1694000" />
-      <workItem from="1565630364019" duration="3149000" />
-      <workItem from="1566663387847" duration="601000" />
-      <workItem from="1567194777720" duration="10000" />
-      <workItem from="1568907697097" duration="1323000" />
-      <workItem from="1569008590758" duration="3335000" />
-      <workItem from="1569012538393" duration="2931000" />
+      <workItem from="1565104911784" duration="9070000" />
+      <workItem from="1565258462112" duration="1577000" />
+      <workItem from="1565617084697" duration="1542000" />
+      <workItem from="1569077167023" duration="246000" />
     </task>
-    <task id="LOCAL-00001" summary="cooler code">
-      <created>1565629870635</created>
+    <task id="LOCAL-00001" summary="added dialog and Jsonparser">
+      <created>1565113836173</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1565629870635</updated>
+      <updated>1565113836173</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added dialog and Jsonparser">
+      <created>1565628820055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565628820055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +146,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cooler code" />
-    <option name="LAST_COMMIT_MESSAGE" value="cooler code" />
+    <MESSAGE value="added dialog and Jsonparser" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dialog and Jsonparser" />
   </component>
 </project>
