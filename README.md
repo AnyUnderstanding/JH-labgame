@@ -1,8 +1,8 @@
 # JH-labgame
 Dieses Projekt ist ein kleines Spiel, welches den Klimawandel thematisiert.
-Man beginnt als knuffiges, interessiertes Männchen und bahnt sich sein Weg durch die Welt.
+Man beginnt als knuffiges, interessiertes Männchen und bahnt sich seinen Weg durch die Welt.
 
-Man muss seine Mitburger davon überzeugen aktive zu werden und was gegen den Klimawandel zu tun.
+Man muss seine Mitbürger davon überzeugen aktiv zu werden und etwas gegen den Klimawandel zu tun.
 
 Beantworte die Quizfragen und rette die Welt!
 
